@@ -1,6 +1,6 @@
 {
     "python.testing.pytestArgs": [
-        "LAB_01_python_basico"
+        "LAB_02_pandas"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true
