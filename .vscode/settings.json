@@ -1,6 +1,6 @@
 {
     "python.testing.pytestArgs": [
-        "LAB_02_pandas"
+        "LAB_03_ingestion_de_texto_plano"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true
