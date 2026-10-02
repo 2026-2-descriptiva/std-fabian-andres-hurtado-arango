@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "LAB_01_python_basico"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
