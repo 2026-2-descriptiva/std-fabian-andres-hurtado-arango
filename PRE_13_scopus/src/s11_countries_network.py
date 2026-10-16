@@ -44,7 +44,6 @@ def _assign_cluster_to_node(G, clusters_file) -> dict:
         for cluster_id, community in enumerate(communities)
         for node in community
     }
-
     nx.set_node_attributes(G, node_to_cluster, "cluster")
 
     return G

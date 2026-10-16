@@ -41,8 +41,10 @@ def s02_make_documents_by_year_plot():
         plot_bgcolor="white",
         paper_bgcolor="white",
     )
+    
 
     fig.write_html(PLOT_FILE)
+
 
 
 if __name__ == "__main__":

@@ -14,6 +14,7 @@ GEO_DATA_URL = "https://raw.githubusercontent.com/python-visualization/folium/ma
 
 def s07_countries_world_map() -> None:
 
+
     df = pd.read_csv(DATA_FILE)
 
     m = folium.Map(

@@ -9,6 +9,7 @@ import requests
 SUBMISSION_DIRECTORY = Path(__file__).resolve().parent.parent / "submission"
 SUBMISSION_FILE = SUBMISSION_DIRECTORY / "scopus.csv.gz"
 
+
 REPLACEMENTS = {
     "North Macedonia": "Macedonia",
     "Palestine": "West Bank",

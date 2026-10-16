@@ -13,7 +13,6 @@ NETWORK_FILE = SUBMISSION_DIRECTORY / "keywords_cooc_network.html"
 
 FONTSIZE = 12
 
-
 def s20_keywords_network():
     make_cooc_network_plot(
         matrix_file=MATRIX_FILE,
@@ -24,7 +23,6 @@ def s20_keywords_network():
         font_size_range=(8, 30),
         link_size_range=(1, 10),
     )
-
 
 if __name__ == "__main__":
     s20_keywords_network()

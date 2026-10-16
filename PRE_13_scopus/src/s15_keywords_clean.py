@@ -15,7 +15,6 @@ REPLACEMENTS = {
     "BLOCKCHAIN TECHNOLOGY": "BLOCKCHAIN",
 }
 
-
 def s15_keywords_clean() -> None:
 
     df = pd.read_csv(SUBMISSION_FILE, compression="gzip")
@@ -25,6 +24,7 @@ def s15_keywords_clean() -> None:
         df["keywords_clean"] = df["keywords_clean"].str.replace(old, new)
 
     df.to_csv(SUBMISSION_FILE, index=False)
+
 
 
 if __name__ == "__main__":

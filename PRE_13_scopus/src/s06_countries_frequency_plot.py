@@ -11,6 +11,7 @@ DATA_FILE = SUBMISSION_DIRECTORY / "country_frequency.csv"
 BAR_PLOT_FILE = SUBMISSION_DIRECTORY / "country_frequency_plot.html"
 
 
+
 def make_frequency_plot(filepath, n):
 
     df = pd.read_csv(filepath)

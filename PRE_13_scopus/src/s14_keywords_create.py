@@ -15,6 +15,5 @@ def s14_keywords_create() -> None:
     df["keywords_raw"] = df["keywords_raw"].str.strip("; ")
     df.to_csv(SUBMISSION_FILE, index=False)
 
-
 if __name__ == "__main__":
     s14_keywords_create()

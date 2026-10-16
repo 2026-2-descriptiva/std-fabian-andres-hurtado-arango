@@ -15,7 +15,6 @@ def make_frequency_report(column, file_path):
     df = pd.read_csv(SUBMISSION_FILE, compression="gzip")
     df = df[[column]].copy()
     df = df.rename(columns={column: "item"})
-
     series = df["item"].copy()
     series = series.dropna()
     series = series.str.split("; ").explode()
@@ -28,6 +27,7 @@ def s05_countries_frequency_report():
         column="countries_clean",
         file_path=FREQUENCY_REPORT_FILE,
     )
+
 
 
 if __name__ == "__main__":

@@ -14,10 +14,8 @@ CLUSTERS_FILE = SUBMISSION_DIRECTORY / "country_clusters.txt"
 
 
 def make_communities_report(input_file, output_file) -> None:
-
     cooc_matrix = pd.read_csv(input_file)
     cooc_matrix = cooc_matrix.set_index(cooc_matrix.columns[0])
-
     G = nx.from_pandas_adjacency(cooc_matrix)
     G.remove_edges_from(nx.selfloop_edges(G))
     G.remove_edges_from(

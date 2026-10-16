@@ -8,9 +8,7 @@ MATRIX_FILE = SUBMISSION_DIRECTORY / "keywords_cooc_matrix.csv"
 
 
 def filter_cooc_matrix(matrix_file, min_occ):
-
     terms = []
-
     df = pd.read_csv(matrix_file)
     df = df.set_index(df.columns[0])
 

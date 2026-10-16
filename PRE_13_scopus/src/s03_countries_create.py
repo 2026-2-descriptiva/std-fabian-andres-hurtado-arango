@@ -10,6 +10,7 @@ SUBMISSION_FILE = SUBMISSION_DIRECTORY / "scopus.csv.gz"
 
 def _create_countries_column(df):
 
+
     df = df.copy()
     df["countries_raw"] = df["affiliations"].copy()
     df["countries_raw"] = df["countries_raw"].str.split(";")

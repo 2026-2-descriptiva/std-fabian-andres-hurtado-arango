@@ -15,6 +15,7 @@ def make_cooc_heatmap(input_file, output_file) -> None:
     cooc_matrix = pd.read_csv(input_file)
     cooc_matrix = cooc_matrix.set_index(cooc_matrix.columns[0])
 
+
     figure = px.imshow(
         cooc_matrix,
         color_continuous_scale="Blues",

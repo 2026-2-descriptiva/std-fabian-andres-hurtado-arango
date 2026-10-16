@@ -30,6 +30,7 @@ def make_cooc_matrix(column, output_file) -> pd.DataFrame:
         .fillna(0)
         .astype(int)
     )
+    
 
     matrix.to_csv(output_file)
 
